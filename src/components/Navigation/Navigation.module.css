@@ -1,0 +1,126 @@
+.navigationWrapper {
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0 3px 3px #bbbbbb;
+    border-bottom-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+}
+
+.navigation {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoWrapper {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: grid;
+    place-items: center;
+
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+    background-color: #7b81f3;
+    position: relative;
+}
+
+.subtract {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: linear-gradient(#484c90, #7177e1);
+    top: 0;
+    left: 0;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+    color: #000000;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.add {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: linear-gradient(#484c90, #7177e1);
+    top: 0;
+    right: 0;
+    margin-top: -.5rem;
+    margin-right: -.5rem;
+    color: #000000;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.multiply {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: linear-gradient(#484c90, #7177e1);
+    bottom: 0;
+    left: 0;
+    margin-bottom: -.5rem;
+    margin-left: -.5rem;
+    color: #000000;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.divide {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: linear-gradient(#484c90, #7177e1);
+    bottom: 0;
+    right: 0;
+    margin-bottom: -.5rem;
+    margin-right: -.5rem;
+    color: #000000;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.mainBtn a, .authButtons a{
+    display: inline-block;
+    padding: 1rem 1.75rem;
+    color: #000000;
+    background: linear-gradient(to left, #df993c 5%, #f1da04);
+    margin: 0 1rem;
+    border-radius: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+}
+
+.authButtonsSection{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.authButtons a{
+    padding: .5rem 1rem;
+    font-size: 1.05rem;
+    border-radius: 1.5rem;
+}
+
+.authButtonsSection p{
+    align-self: center;
+    font-size: 1.4rem;
+    margin-top: .5rem;
+}

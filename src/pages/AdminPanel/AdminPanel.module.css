@@ -1,88 +1,45 @@
 .adminPanelWrapper{
     width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.heading{
-    text-align: center;
-    margin: 4rem auto 2rem auto;
+.user{
+    width: 90%;
+    margin: 3rem auto;
+    box-shadow: 3px 4px 4px #cccccc;
+    padding: 1rem 1.25rem;
+    border-radius: 2rem;
+    display: flex;
+    border: 1px solid #cccccc;
+    position: relative;
 }
 
-.summary{
-    width: 80%;
-    margin: .5rem auto;
-    font-weight: 700;
+.userImageBackdrop{
+    width: 10rem;
 }
 
-.summary span{
-    letter-spacing: .7px;
-    font-size: 120%;
-}
-
-.usersListContainer{
-    width: 80%;
-    border: 1px solid #00000070;
-    border-radius: 5px;
-    margin: 1rem auto;
-}
-
-.header{
-    border: 2px solid black;
-    background-color: #0c0c33;
-    color: white;
+.user img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
 }
 
 .userInfo{
-    margin: .5rem 0;
+    flex: 1;
+    margin-left: 1rem;
 }
 
-.header, .userInfo{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "name email phone country";
-    gap: .75rem;
+.userInfo h2{
+    margin-bottom: .5rem;
 }
 
-.header *{
-    font-weight: 700;
+.userInfo p{
+    margin-bottom: .2rem;
 }
-
-.userName{
-    grid-area: "name";
-    place-items: center;
-    padding: .5rem .75rem;
-    font-weight: 700;
-    letter-spacing: .3px;
-}
-
-.userEmail{
-    grid-area: "email";
-    place-items: center;
-    padding: .5rem .75rem;
-}
-
-.userPhone{
-    grid-area: "phone";
-    place-items: center;
-    padding: .5rem .75rem;
-}
-
-.userLocation{
-    grid-area: "country";
-    place-items: center;
-    padding: .5rem .75rem;
-}
-
-.body{
-    width: 100%;
-}
-
-
-.userInfo:nth-of-type(odd){
-    background-color: #aabbcc85;
-}
-
-
-
 

@@ -1,0 +1,63 @@
+.treiviaContainer{
+    width: 90%;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    height: calc(100vh - 5rem);
+}
+
+.mainSpace{
+    width: 85%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.mainSpace h1{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.sideBar{
+    width: 10%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.treivia{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.treiviaHead{
+    width: 100%;
+    background: linear-gradient(to top, #3e417a 15%, #7b81f4);
+    padding: 1rem;
+    letter-spacing: 2px;
+    color: #000000;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    border-bottom-left-radius: 0;
+}
+
+.treiviaBody{
+    height: 10rem;
+    width: 100%;
+}
+
+.linksContainer{
+    width: 100%;
+}
+
+.linksContainer a{
+    display: block;
+    width: max-content;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border-bottom-left-radius: 0;
+    background: linear-gradient(to top, #3e417a 5%, #7b81f4);
+    font-family: inherit;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
