@@ -9,6 +9,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Treivia from './pages/Treivia/Treivia';
 import Calculator from './pages/Calculator/Calculator';
 import APIs from './pages/APIs/APIs';
+import Support from './pages/Support/Support';
 
 function App() {
 
@@ -36,6 +37,9 @@ function App() {
       </Route>
       <Route path="/apis">
         <APIs/>
+      </Route>
+      <Route path="/support">
+        <Support/>
       </Route>
       <Redirect to="/"/>
     </Switch>
