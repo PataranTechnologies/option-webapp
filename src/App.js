@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import AdminPanel from "./pages/AdminPanel/AdminPanel";
@@ -8,13 +8,13 @@ import Signup from "./pages/Signup/Signup";
 import Navigation from "./components/Navigation/Navigation";
 import Treivia from './pages/Treivia/Treivia';
 import Calculator from './pages/Calculator/Calculator';
+import APIs from './pages/APIs/APIs';
 
 function App() {
 
-  const [authInvoke, setAuthInvoke] = useState(false);
   return (
     <>
-    <Navigation authInvoked={() => setAuthInvoke(true)} isAuthInvoke={authInvoke}/>
+    <Navigation/>
     <Switch>
       <Route path="/" exact>
         <Homepage/>
@@ -33,6 +33,9 @@ function App() {
       </Route>
       <Route path="/calculator">
         <Calculator/>
+      </Route>
+      <Route path="/apis">
+        <APIs/>
       </Route>
       <Redirect to="/"/>
     </Switch>

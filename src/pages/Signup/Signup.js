@@ -1,17 +1,28 @@
 import React, { useState } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 import styles from "./Signup.module.css";
-import { Link } from "react-router-dom";
 
 const Signup = () => {
-
+  const history = useHistory();
+  
   const [userData, setUserData] = useState({
     name: "",
     email: "",
     password: "",
     country: "",
     phone: "",
+    image: "https://cdn.pixabay.com/photo/2017/08/06/02/50/people-2588065_1280.jpg"
   });
+
+  const dispatch = useDispatch();
+
+  const signupHandler = (event) => {
+    event.preventDefault();
+    dispatch({type: "ADD", payload: userData});
+    history.push("/admin");
+  }
 
   const inputChangeHandler = (event) => {
     setUserData({...userData, [event.target.name]: event.target.value});
@@ -23,7 +34,7 @@ const Signup = () => {
         <div className={styles.formHeader}>
           <h2>Create Your Account</h2>
         </div>
-        <form>
+        <form onSubmit={signupHandler}>
           <div className={styles.formGroup}>
             <label htmlFor="name">Name</label>
             <input

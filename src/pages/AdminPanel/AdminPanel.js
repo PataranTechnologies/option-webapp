@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-
-import { users as userData } from "../../util/users.js";
+import React from "react";
+import { useSelector } from "react-redux";
 
 import styles from "./AdminPanel.module.css";
 
 const AdminPanel = () => {
-  const [users] = useState(userData);
+  const users = useSelector(state => state.users);
   return (
     <div className={styles.adminPanelWrapper}>
       {

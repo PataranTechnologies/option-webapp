@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 
 import styles from "./Navigation.module.css";
-import { Link } from 'react-router-dom';
 
-const Navigation = ({authInvoked, isAuthInvoke}) => {
+const Navigation = ({location}) => {
+    
     return (
         <div className={styles.navigationWrapper}>
             <div className={styles.navigation}>
@@ -21,9 +22,9 @@ const Navigation = ({authInvoked, isAuthInvoke}) => {
                 <Link to="/apis">APIs</Link>
             </div>
             <div className={styles.authButtonsSection}>
-                { !isAuthInvoke ? (<div className={styles.authButtons}>
-                    <Link to="/signup" onClick={authInvoked}>Registration</Link>
-                    <Link to="/login"  onClick={authInvoked}>Login</Link>
+                { (location.pathname !== "/signup" && location.pathname !== "/login") ? (<div className={styles.authButtons}>
+                    <Link to="/signup">Registration</Link>
+                    <Link to="/login">Login</Link>
                 </div>) : null }
                 <p className={styles.section}>How to use API</p>
             </div>
@@ -32,4 +33,4 @@ const Navigation = ({authInvoked, isAuthInvoke}) => {
     );
 };
 
-export default Navigation;
+export default withRouter(Navigation);
